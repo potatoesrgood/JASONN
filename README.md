@@ -1,6 +1,9 @@
 # JASONN
 A new virtual assistant
 
+# Installation
+  1. Open terminal
+
 # SETUP
   1. Open terminal
   2. Run these commands "cd JASONN" "python Setup.py"

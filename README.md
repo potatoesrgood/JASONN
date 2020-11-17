@@ -3,6 +3,7 @@ A new virtual assistant
 
 # Installation
   1. Open terminal
+  2. Run "git clone https://github.com/potatoesrgood/JASONN.git" in terminal
 
 # SETUP
   1. Open terminal

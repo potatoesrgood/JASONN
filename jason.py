@@ -295,31 +295,6 @@ while True:
             speak('playing ' + text + 'from youtube.com')
             pywhatkit.playonyt(text)
 
-        elif 'text' in text:
-            speak('who would you like to text')
-            time.sleep(3)
-            if 'him' in text:
-                speak('say your message now')
-                text = get_audio()
-                time.sleep(3)
-                speak('Sending message')
-                message = client.messages.create(
-                    to='+13023838482',
-                    from_='+12185173826',
-                    body=text)
-                speak('Done')
-
-            if 'me' in text:
-                speak('say your message now')
-                text = get_audio()
-                time.sleep(3)
-                speak('Sending message')
-                message = client.messages.create(
-                    to='+13022293037',
-                    from_='+12185173826',
-                    body=text)
-                speak('Done')
-
         elif 'calculator' in text:
             speak('Would you like to add, multiply, subtract, or divide')
             text = get_audio()

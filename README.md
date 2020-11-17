@@ -2,8 +2,8 @@
 A new virtual assistant
 
 # SETUP
-  1. Find the JASONN file in your home directory
-  2. Run Setup
+  1. Open terminal
+  2. Run these commands "cd JASONN" "python Setup.py"
   3. Drag jason.py into your home directory
   
 # Setting Up a Shortcut (Optional)

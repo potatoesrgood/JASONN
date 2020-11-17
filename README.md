@@ -7,15 +7,15 @@ SETUP
   3. Drag jason.py into your home directory
   
 Setting Up a Shortcut (Optional)
-  1.Open terminal
+    1.Open terminal
   
-  2.Run "nano .bash_profile"
+    2.Run "nano .bash_profile"
   
-  3.Type "alias Jasonn='python jason.py'" at the top
+    3.Type "alias Jasonn='python jason.py'" at the top
   
-  4.Now do "control-o", "enter", and then "control-x"
+    4.Now do "control-o", "enter", and then "control-x"
   
-  5.Then do "source ~/.bash_profile" in the terminal window
+    5.Then do "source ~/.bash_profile" in the terminal window
 
 Starting The Program
   1. Open terminal

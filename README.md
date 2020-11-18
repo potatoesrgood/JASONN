@@ -1,5 +1,5 @@
 # JASONN
-A new, open source, virtual assistant. It is made entirely with python. I you have any questions, please feel free to comment those questions.  
+A new, open source, virtual assistant. It is made entirely with python. I you have any questions, please feel free to comment those questions. (currently only for mac, I'm working on the windows installation)  
 
 # Installation
     git clone https://github.com/potatoesrgood/JASONN.git

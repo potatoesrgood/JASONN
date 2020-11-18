@@ -1,0 +1,13 @@
+Functions
+
+(Remember, JASONN can be slow when he starts up)
+
+Hello
+What is your name?
+Stop
+What time is it?
+What is todays date?
+Search _____ (Enter what you want to search)
+Tell me a joke
+Sing _____ (Will make JASONN play music)
+Calculator (Currently, can only add)

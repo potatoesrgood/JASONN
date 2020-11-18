@@ -15,7 +15,7 @@ import os
 os.system('rm Setup')
 
 # Settings
-ccity = 'Wilmington'
+city = ''
 api_key = "5ee35b677452b4f0f9ce23def22c4973"  # Your openweather api key
 units = 'imperial'
 temperature_unit = 'F'
@@ -78,73 +78,6 @@ while True:
 
         elif "your name" in text:
             speak("My name is Jason. I was created by Michael bonner")
-
-        elif 'weather' in text:
-            icons_list = {
-                "01d": "Clear Sky Today:",  # Clear sky day.
-                "01n": "Clear Sky Tonight:",  # Clear sky night.
-                "02d": "Few Clouds Today:",  # Few clouds day.
-                "02n": "Few Clouds To Night:",  # Few clouds night.
-                "03d": "Scattered Clouds Today:",  # Scattered clouds day.
-                "03n": "Scattered Clouds Tonight",  # Scattered clouds night.
-                "04d": "Broken Clouds Today:",  # Broken clouds day.
-                "04n": "Broken Clouds Tonight:",  # Broken clouds night.
-                "09d": "Showers Today:",  # Shower rain day.
-                "09n": "Showers Tonight:",  # Shower rain night.
-                "10d": "Rain Today:",  # Rain day.
-                "10n": "Rain Tonight:",  # Rain night
-                "11d": "Thunderstorms Today:",  # Thunderstorm day.
-                "11n": "Thunderstorms Tonight:",  # Thunderstorm night
-                "13d": "Snow Today:",  # Snow day. Snowflake alternative: 
-                "13n": "Snow Tonight:",  # Snow night. Snowflake alternative: 
-                "50d": "Mist Today:",  # Mist day.
-                "50n": "Mist Today:",  # Mist night.
-            }
-
-            atmophere_icons_list = {
-                701: "Mist",  # Mist
-                711: "Smoke",  # Smoke
-                721: "Haze",  # Haze
-                731: "Dust",  # Dust (Sand / dust whirls)
-                741: "Fog",  # Fog
-                751: "Sand",  # Sand
-                761: "Dust",  # Dust
-                762: "Ash",  # Ash
-                771: "Squalls",  # Squalls
-                781: "Tornado"  # Tornado
-            }
-
-
-            def main():
-                try:
-                    # Get data from openweather
-                    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units={}&appid={}'.format(city, units,
-                                                                                                         api_key)
-                    result = requests.get(url)
-
-                    # If result was received
-                    if result.status_code == requests.codes['ok']:
-                        # Read json
-                        weather = result.json()
-
-                        # Get info from array
-                        id = int(weather['weather'][0]['id'])
-                        group = weather['weather'][0]['main'].capitalize()
-                        icon = weather['weather'][0]['icon'].capitalize()
-                        temp = int(float(weather['main']['temp']))
-
-                        # Load another icons for Atmosphere group
-                        if (group == "Atmosphere"):
-                            return atmophere_icons_list[id] + ' {}°{}'.format(temp, temperature_unit)
-
-                        return icons_list[icon] + ' {}°{}'.format(temp, temperature_unit)
-
-                except:
-                    return ""  # Return reload icon
-
-
-            if __name__ == "__main__":
-                speak(main())
 
         elif 'what time' in text:
             engine = pyttsx3.init()

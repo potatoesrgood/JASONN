@@ -8,7 +8,7 @@ A new, open source, virtual assistant. It is made entirely with python. I you ha
     cd JASONN 
     python Setup.py
     
-3. Drag jason.py into your home directory
+Drag jason.py into your home directory
   
 # Setting Up a Shortcut (Optional)
     nano .bash_profile
@@ -17,7 +17,7 @@ Put the next line at the top of the script:
    
     alias Jasonn='python jason.py'
   
-   Now do "control-o", "enter", and then "control-x"
+Now do "control-o", "enter", and then "control-x"
   
     source ~/.bash_profile
 
